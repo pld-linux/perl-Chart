@@ -26,7 +26,7 @@ Chart - zestaw modu³ów do tworzenia wykresów.
 
 %build
 perl Makefile.PL
-make
+%{__make}
 
 %install
 rm -rf $RPM_BUILD_ROOT
