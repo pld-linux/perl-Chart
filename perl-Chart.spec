@@ -3,8 +3,8 @@
 %bcond_without	tests	# do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	Chart
-%define	pnam	Chart
+%define		pdir	Chart
+%define		pnam	Chart
 Summary:	Chart - create .png or .jpg files with charts
 Summary(pl):	Chart - tworzenie wykresów w formacie .png lub .jpg
 Name:		perl-Chart
