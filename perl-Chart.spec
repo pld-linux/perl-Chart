@@ -2,8 +2,8 @@
 Summary:	Chart perl module
 Summary(pl):	Modu³ perla Chart
 Name:		perl-Chart
-Version:	0.99b
-Release:	7
+Version:	1.0.1
+Release:	1
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.cpan.org/pub/CPAN/modules/by-module/Chart/Chart-%{version}.tar.gz
@@ -41,4 +41,5 @@ rm -rf $RPM_BUILD_ROOT
 %doc *.gz
 %dir %{perl_sitelib}/Chart
 %{perl_sitelib}/Chart/*.pm
+%{perl_sitelib}/Chart.pod
 %{_mandir}/man3/*
