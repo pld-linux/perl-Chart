@@ -6,7 +6,7 @@
 %define		pdir    Chart
 %define		pnam    Chart
 Summary:	Chart - create .png or .jpg files with charts
-Summary(pl):	Chart - stwórz wykresy w formacie .png lub .jpg
+Summary(pl):	Chart - tworzenie wykresów w formacie .png lub .jpg
 Name:		perl-Chart
 Version:	2.2
 Release:	1
