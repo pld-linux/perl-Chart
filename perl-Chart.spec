@@ -7,9 +7,9 @@ Release:	1
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.cpan.org/pub/CPAN/modules/by-module/Chart/Chart-%{version}.tar.gz
-BuildRequires:	rpm-perlprov >= 3.0.3-16
 BuildRequires:	perl >= 5.6.1
 BuildRequires:	perl-GD
+BuildRequires:	rpm-perlprov >= 3.0.3-16
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -31,14 +31,12 @@ rm -rf $RPM_BUILD_ROOT
 
 %{__make} install DESTDIR=$RPM_BUILD_ROOT
 
-gzip -9nf README TODO *txt
-
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc *.gz
+%doc README TODO *txt
 %dir %{perl_sitelib}/Chart
 %{perl_sitelib}/Chart/*.pm
 %{perl_sitelib}/Chart.pod
