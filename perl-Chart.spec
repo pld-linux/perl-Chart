@@ -3,7 +3,7 @@ Summary:	Chart perl module
 Summary(pl):	Modu³ perla Chart
 Name:		perl-Chart
 Version:	0.99b
-Release:	4
+Release:	5
 License:	GPL
 Group:		Development/Languages/Perl
 Group(de):	Entwicklung/Sprachen/Perl
