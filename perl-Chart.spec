@@ -23,8 +23,8 @@ Summary(sv):	Chart Perlmodul
 Summary(uk):	Модуль для Perl Chart
 Summary(zh_CN):	Chart Perl дё©И
 Name:		perl-Chart
-Version:	1.0.1
-Release:	2
+Version:	2.2
+Release:	1
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pnam}-%{version}.tar.gz
@@ -60,4 +60,3 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc README TODO *txt
 %{perl_sitelib}/Chart/*.pm
-%{_mandir}/man3/*
