@@ -3,13 +3,14 @@ Summary:	Chart perl module
 Summary(pl):	Modu³ perla Chart
 Name:		perl-Chart
 Version:	0.99b
-Release:	3
+Release:	4
 License:	GPL
 Group:		Development/Languages/Perl
+Group(de):	Entwicklung/Sprachen/Perl
 Group(pl):	Programowanie/Jêzyki/Perl
 Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/Chart/Chart-%{version}.tar.gz
 BuildRequires:	rpm-perlprov >= 3.0.3-16
-BuildRequires:	perl >= 5.005_03-14
+BuildRequires:	perl >= 5.6
 BuildRequires:	perl-GD
 %requires_eq	perl
 Requires:	%{perl_sitearch}
@@ -30,26 +31,17 @@ perl Makefile.PL
 
 %install
 rm -rf $RPM_BUILD_ROOT
+
 %{__make} install DESTDIR=$RPM_BUILD_ROOT
 
-(
-  cd $RPM_BUILD_ROOT%{perl_sitearch}/auto/Chart
-  sed -e "s#$RPM_BUILD_ROOT##" .packlist >.packlist.new
-  mv .packlist.new .packlist
-)
-
-gzip -9nf $RPM_BUILD_ROOT%{_mandir}/man3/* \
-        README TODO *txt
+gzip -9nf README TODO *txt
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc {README,TODO,rgb.txt}.gz
-
+%doc *.gz
 %dir %{perl_sitelib}/Chart
 %{perl_sitelib}/Chart/*.pm
-%{perl_sitearch}/auto/Chart
-
 %{_mandir}/man3/*
