@@ -48,7 +48,7 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc {README,TODO,rgb.txt}.gz
 
-%dir %{_perl_sitelib}/Chart
+%dir %{perl_sitelib}/Chart
 %{perl_sitelib}/Chart/*.pm
 %{perl_sitearch}/auto/Chart
 
