@@ -5,7 +5,7 @@
 %include	/usr/lib/rpm/macros.perl
 %define		pdir	Chart
 Summary:	Chart - create .png or .jpg files with charts
-Summary(pl):	Chart - tworzenie wykresÛw w formacie .png lub .jpg
+Summary(pl.UTF-8):   Chart - tworzenie wykres√≥w w formacie .png lub .jpg
 Name:		perl-Chart
 Version:	2.4.1
 Release:	1
@@ -24,8 +24,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 Chart - a series of charting modules.
 
-%description -l pl
-Chart - zestaw modu≥Ûw do tworzenia wykresÛw.
+%description -l pl.UTF-8
+Chart - zestaw modu≈Ç√≥w do tworzenia wykres√≥w.
 
 %prep
 %setup -q -n %{pdir}-%{version}
