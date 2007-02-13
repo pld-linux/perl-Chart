@@ -5,7 +5,7 @@
 %include	/usr/lib/rpm/macros.perl
 %define		pdir	Chart
 Summary:	Chart - create .png or .jpg files with charts
-Summary(pl.UTF-8):   Chart - tworzenie wykresów w formacie .png lub .jpg
+Summary(pl.UTF-8):	Chart - tworzenie wykresów w formacie .png lub .jpg
 Name:		perl-Chart
 Version:	2.4.1
 Release:	1
