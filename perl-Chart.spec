@@ -8,7 +8,7 @@ Summary:	Chart - create .png or .jpg files with charts
 Summary(pl.UTF-8):	Chart - tworzenie wykresów w formacie .png lub .jpg
 Name:		perl-Chart
 Version:	2.4.1
-Release:	1
+Release:	2
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
