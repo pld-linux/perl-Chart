@@ -2,7 +2,6 @@
 # Conditional build:
 %bcond_without	tests	# do not perform "make test"
 #
-%include	/usr/lib/rpm/macros.perl
 %define		pdir	Chart
 Summary:	Chart - create .png or .jpg files with charts
 Summary(pl.UTF-8):	Chart - tworzenie wykresów w formacie .png lub .jpg
